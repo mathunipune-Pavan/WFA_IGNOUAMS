@@ -29,8 +29,22 @@ namespace WFA_IGNOUAMS
                 con.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
-                cmd.CommandText = @"Select * from Tbl_User where Username='" + TB_Username.Text + 
-                                    "' and Password = '" + TB_Password.Text + "';";
+                cmd.CommandText = @"Select * from Tbl_User where Username= @username and Password = @pass;";
+                SqlParameter username = new SqlParameter();
+                username.ParameterName = "@username";
+                username.DbType = DbType.String;
+                username.Value = TB_Username.Text;
+                cmd.Parameters.Add(username);
+                
+                SqlParameter pass = new SqlParameter();
+                pass.ParameterName = "@pass";
+                pass.DbType = DbType.String;
+                pass.Value = TB_Password.Text;
+                cmd.Parameters.Add(pass);
+
+                
+
+
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {

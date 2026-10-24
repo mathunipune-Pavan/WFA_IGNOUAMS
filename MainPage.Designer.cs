@@ -37,7 +37,6 @@
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editOrDeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,8 +90,7 @@
             // 
             this.userToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewUserToolStripMenuItem,
-            this.viewToolStripMenuItem,
-            this.editOrDeleteToolStripMenuItem});
+            this.viewToolStripMenuItem});
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
             this.userToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
             this.userToolStripMenuItem.Text = "User";
@@ -108,13 +106,8 @@
             // 
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.viewToolStripMenuItem.Text = "View ";
-            // 
-            // editOrDeleteToolStripMenuItem
-            // 
-            this.editOrDeleteToolStripMenuItem.Name = "editOrDeleteToolStripMenuItem";
-            this.editOrDeleteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.editOrDeleteToolStripMenuItem.Text = "Edit or Delete";
+            this.viewToolStripMenuItem.Text = "View or Edit";
+            this.viewToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
             // 
             // MainPage
             // 
@@ -145,6 +138,5 @@
         private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editOrDeleteToolStripMenuItem;
     }
 }

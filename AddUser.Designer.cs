@@ -54,7 +54,7 @@
             this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label2.Location = new System.Drawing.Point(222, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(433, 45);
+            this.label2.Size = new System.Drawing.Size(423, 45);
             this.label2.TabIndex = 2;
             this.label2.Text = "Add New User Details";
             // 
@@ -197,7 +197,7 @@
             this.BT_Submit.Font = new System.Drawing.Font("Modern No. 20", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BT_Submit.Location = new System.Drawing.Point(358, 656);
             this.BT_Submit.Name = "BT_Submit";
-            this.BT_Submit.Size = new System.Drawing.Size(132, 52);
+            this.BT_Submit.Size = new System.Drawing.Size(151, 52);
             this.BT_Submit.TabIndex = 17;
             this.BT_Submit.Text = "Submit";
             this.BT_Submit.UseVisualStyleBackColor = true;

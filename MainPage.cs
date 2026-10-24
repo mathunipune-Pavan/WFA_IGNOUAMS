@@ -24,5 +24,12 @@ namespace WFA_IGNOUAMS
             user.MdiParent = this;
 
         }
+
+        private void viewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewUSers vu = new ViewUSers();
+            vu.Show();
+            vu.MdiParent = this;
+        }
     }
 }

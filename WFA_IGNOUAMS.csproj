@@ -58,6 +58,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IAMS_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IAMS_DBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="InhiritableForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +84,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewUSers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewUSers.Designer.cs">
+      <DependentUpon>ViewUSers.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +115,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ViewUSers.resx">
+      <DependentUpon>ViewUSers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="IAMS_DBDataSet.xsc">
+      <DependentUpon>IAMS_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IAMS_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IAMS_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IAMS_DBDataSet.xss">
+      <DependentUpon>IAMS_DBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
